@@ -49,7 +49,7 @@ label_encode = LabelEncoder()
 labels = label_encode.fit_transform(labels)
 labels = to_categorical(labels)
 
-xtrain, xtest, ytrain, ytest = train_test_split(images, labels, test_size=0.3, random_state=1, stratify=labels)
+xtrain, xtest, ytrain, ytest = train_test_split(images, labels, test_size=0.3, random_state=1)
 
 # DataAugmentation
 datagen = ImageDataGenerator(
