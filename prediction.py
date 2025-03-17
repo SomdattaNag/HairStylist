@@ -3,10 +3,8 @@ import cv2
 import numpy as np
 from label import hairtype
 
-# Load the pretrained model
 model = load_model("model.h5")
 im_size = 224  
-
 def preprocess_image(image_path):
     img = cv2.imread(image_path)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  
@@ -14,7 +12,6 @@ def preprocess_image(image_path):
     img = img / 255.0  
     img = np.expand_dims(img, axis=0)  
     return img
-
 def predict_hairtype(image_path):
     newimg = preprocess_image(image_path)
     prediction = model.predict(newimg)
