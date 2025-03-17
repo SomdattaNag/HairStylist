@@ -37,7 +37,7 @@ An AI application to analyze User's hairtype from images and provide haircare re
 
 7. Sentiment analysis using textblob: Uses textblob for basic sentiment analysis of feedbacks and filter products according to feedback_score.
 
-8. User Interface: The application has clean UI built with streamlit that allows users's to either upload their photos or take photos directly and then provide haircare recommendations. Links are provided for each product. Users can can also select their own price range from the drop down menu to get products according to their preferred price range.
+8. User Interface: The application has clean UI built with streamlit that allows users to either upload their photos or take photos directly and then provide haircare recommendations. Links are provided for each product. Users can can also select their own price range from the drop down menu to get products according to their preferred price range.
    
 
 
