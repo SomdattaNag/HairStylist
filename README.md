@@ -1,5 +1,6 @@
 # HairStylist
-An AI application to analyze User's hairtype from images and provide haircare recommendations based on their predicted hairtype, price range and feedbacks.
+Developed an AI application to analyze users’ hair type from images and provide haircare recommendations based on
+their predicted hair type, selected price range, and product feedback.
 
 #Tech Stack: Python, Tensorflow, Streamlit, OpenCV, PIL, Matplotlib
 
@@ -11,7 +12,7 @@ An AI application to analyze User's hairtype from images and provide haircare re
 
 3. The application uses content-filtering, TF-IDF with cosine similarity to filter products according to user's hairtype. It uses 2 datasets a hairtypekeyword dataset and a product dataset (shampoo_data.csv) to match keywords with products.
 
-4. It also uses basic sentiment analysis (textblob) to filter products according to the top reviews. 
+4. It also uses basic sentiment analysis (textblob) to filter products according to the top reviews/feedbacks. 
 
 5. The application has clean UI built with streamlit that allows users's to either upload their photos or take photos directly and then provide haircare recommendations. Links are provided for each product.
 
@@ -27,7 +28,7 @@ An AI application to analyze User's hairtype from images and provide haircare re
 
 2. Image analysis using transfer learning: The application uses a transfer-learning model MobileNetV2 for image analysis and classification. It uses Data Augmentation techniques to optimize performance.
 
-3. Image pre-processing using OpenCV: The model uses OpenCv to pre-process images.
+3. Image pre-processing using OpenCV: The model uses OpenCV to pre-process images.
 
 4. Interactive Data visualisation: Uses matplotlib to visualise image data.
 
