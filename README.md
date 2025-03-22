@@ -1,6 +1,6 @@
 # HairStylist
 Developed an AI application to analyze users’ hair type from images and provide haircare recommendations based on
-their predicted hair type, selected price range, and product feedback.
+their predicted hair type, selected price range, and products' top feedback.
 
 #Tech Stack: Python, Tensorflow, Streamlit, OpenCV, PIL, Matplotlib
 
@@ -36,7 +36,7 @@ their predicted hair type, selected price range, and product feedback.
 
 6. Product Recommendation using content-filtering: Uses scikit-learn's  TF-IDF and cosine similarity to match products from shampoo_data.csv with keywords from hairtypekeyword.csv and filter them according to prices, similarity score etc.
 
-7. Sentiment analysis using textblob: Uses textblob for basic sentiment analysis of feedbacks and filter products according to feedback_score.
+7. Sentiment analysis using textblob: Uses textblob for basic sentiment analysis of feedbacks and filter products according to feedback_score. The products with top feedback scores are prioritised.
 
 8. User Interface: The application has clean UI built with streamlit that allows users to either upload their photos or take photos directly and then provide haircare recommendations. Links are provided for each product. Users can can also select their own price range from the drop down menu to get products according to their preferred price range.
    
