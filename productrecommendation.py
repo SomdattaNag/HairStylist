@@ -47,7 +47,7 @@ def recommend_products(hair_type, max_price=None, min_feedback=None, top_n=5):
         filtered_df = filtered_df[filtered_df["Product Cost"] <= max_price]
     if min_feedback:
         filtered_df = filtered_df[filtered_df["feedback_Score"] >= min_feedback]
-    filtered_df = filtered_df.sort_values(by="Similarity_Score", ascending=False)
+    filtered_df=filtered_df.sort_values(by=["Similarity_Score", "feedback_Score"], ascending=[False, False])
     filtered_df = filtered_df.drop_duplicates(subset=["Product Name"])
     recommended_df = filtered_df.head(top_n)
     return recommended_df
