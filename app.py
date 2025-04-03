@@ -123,7 +123,7 @@ if image_path:
     </style>
 """, unsafe_allow_html=True)
     price_options = ["All Prices", "Under ₹200", "₹200 - ₹500", "₹500 - ₹1000", "₹1000+"]
-    selected_price = st.selectbox("Filter by Price:", price_options, index=0)
+    selected_price = st.selectbox("Choose Your Price:", price_options, index=0)
 
 
     if selected_price == "Under ₹200":
