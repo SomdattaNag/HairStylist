@@ -2,7 +2,7 @@
 Developed an AI application to analyze users’ hair type from images and provide haircare recommendations based on
 their predicted hair type, selected price range, and products' top feedback.
 
-#Tech Stack: Python, Tensorflow, Streamlit, OpenCV, PIL, Matplotlib, TextBlob
+#Tech Stack: Python, TensorFlow, Streamlit, OpenCV, Pillow, Matplotlib, TextBlob
 
 #Overview:
 
