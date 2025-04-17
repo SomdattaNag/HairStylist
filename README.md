@@ -42,7 +42,7 @@ their predicted hair type, selected price range, and products' top feedback.
 
 8. User Interface: The application has clean UI built with streamlit that allows users to either upload their photos or take photos directly and then provide haircare recommendations. Links are provided for each product. Users can can also select their own price range from the drop down menu to get products according to their preferred price range.
 
-9. Deployment: Deployed the web app using Streamlit Cloud.
+9. Deployment: Deployed a web app using Streamlit Cloud.
    
 
 
