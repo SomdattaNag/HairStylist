@@ -2,9 +2,12 @@
 Developed an AI application to analyze users’ hair type from images and provide haircare recommendations based on
 their predicted hair type, selected price range, and products' top feedback.
 
-#Tech Stack: Python, TensorFlow, Streamlit, OpenCV, Pillow, Matplotlib, TextBlob
+# Live Demo: 
+https://hairstylist-xytvh4e35rqqf7hckt3hse.streamlit.app/
 
-#Overview:
+# Tech Stack: Python, TensorFlow, Streamlit, OpenCV, Pillow, Matplotlib, TextBlob
+
+# Overview:
 
 1. The application uses transfer learning model, MobileNetV2, to analyze user's image to predict their hairtype as Curly, Straight, Wavy, Kinky.
 
@@ -18,7 +21,7 @@ their predicted hair type, selected price range, and products' top feedback.
 
 6. Deployed the application using Streamlit Cloud.
 
-#Features:
+# Features:
 
 1. Dataset: The application has total 3 datasets:
      
