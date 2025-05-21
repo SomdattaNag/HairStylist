@@ -8,5 +8,6 @@ for type in hairtype:
         img_path = f"{folder_path}/{img_name}"
         data.append([img_path, type])
 df = pd.DataFrame(data, columns=["Image Path", "Label"])
+
 #saved as csv
 df.to_csv("hair_dataset.csv", index=False)
