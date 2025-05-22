@@ -14,7 +14,7 @@ Python, TensorFlow, Streamlit, OpenCV, Pillow, Matplotlib, TextBlob
 
 2. Based on the user's predicted hairtype, the application provides hair care recommendations.
 
-3. The application uses content-filtering, TF-IDF with cosine similarity to filter products according to user's hairtype. It uses 2 datasets a hairtypekeyword dataset and a product dataset (shampoo_data.csv) to match keywords with products.
+3. The application uses content-filtering, TF-IDF with cosine similarity to filter products according to user's hairtype. It uses 2 datasets a hairtypekeyword dataset and a product dataset (shampoo_data.csv) to match keywords with products and filter them according to prices, similarity score etc.
 
 4. It also uses basic sentiment analysis (textblob) to filter products according to the top reviews/feedbacks. 
 
