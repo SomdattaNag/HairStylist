@@ -31,12 +31,12 @@ product_df["feedback_Score"] = product_df["feedback"].apply(sentiment)
 tfidf = TfidfVectorizer(stop_words="english", ngram_range=(1, 2),max_df=0.8, min_df=2, max_features=5000)
 tfidf_matrix = tfidf.fit_transform(product_df["Combined_Text"])
 
-def get_keywords_for_hairtype(hair_type):
+def get_keywords(hair_type):
     keywords = keyword_df[keyword_df["HairType"] == hair_type]["Keywords"].values[0]
     return keywords
 
 def recommend_products(hair_type, max_price=None, min_feedback=None, top_n=5):
-    keywords = get_keywords_for_hairtype(hair_type)
+    keywords = get_keywords(hair_type)
     keywords_vector = tfidf.transform([keywords])
     similarity_scores = cosine_similarity(keywords_vector, tfidf_matrix).flatten()
     product_df["Similarity_Score"] = similarity_scores
