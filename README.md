@@ -14,7 +14,7 @@ Python, TensorFlow, Streamlit, OpenCV, Pillow, Matplotlib, TextBlob
 
 2. Based on the user's predicted hairtype, the application provides hair care recommendations.
 
-3. The application uses content-filtering, TF-IDF with cosine similarity to filter products according to user's hairtype. It uses 2 datasets a hairtypekeyword dataset and a product dataset (shampoo_data.csv) to match keywords with products and filter them according to similarity score etc. It also uses basic sentiment analysis (textblob) to filter products according to the top reviews/feedbacks. Users' can also select their own preferred price range. The recommended products are sorted according to the price range.
+3. The application uses content-filtering, TF-IDF with cosine similarity to filter products according to user's hairtype. It uses 2 datasets a hairtypekeyword dataset and a product dataset (shampoo_data.csv) to match keywords with products and filter them according to similarity score etc. It also uses basic sentiment analysis (textblob) to filter products according to the top reviews/feedbacks. Users' can also select their own preferred price range. 
 
 4. The application has clean UI built with streamlit that allows users's to either upload their photos or take photos directly and then provide haircare recommendations. Links are provided for each product.
 
@@ -38,9 +38,9 @@ Python, TensorFlow, Streamlit, OpenCV, Pillow, Matplotlib, TextBlob
 
 5. Test Accuracy: 0.80 to 0.86 (varies due to randomness). The model with highest accuracy (0.86) is saved for future predictions. 
 
-6. Product Recommendation using content-based filtering: The system uses scikit-learn's  TF-IDF and cosine similarity to match products from shampoo_data.csv with keywords from hairtypekeyword.csv and filter them according to similarity score.
+6. Product Recommendation using content-based filtering: The system uses scikit-learn's  TF-IDF and cosine similarity to match products from shampoo_data.csv with keywords from hairtypekeyword.csv and filter them according to similarity score. The products are also flitered by users' selected price range 
 
-7. Sentiment analysis using textblob: Uses textblob for basic sentiment analysis of product feedback and filter products according to feedback_score. The products with top feedback scores are prioritised.
+7. Sentiment analysis using textblob: Uses textblob for basic sentiment analysis of product feedback and filter products according to feedback_score. The products with top feedback scores are prioritised. 
 
 8. User Interface: The application has clean UI built with streamlit that allows users to either upload their photos or take photos directly and then provide haircare recommendations. Links are provided for each product. Users can can also select their own price range from the drop down menu to get products according to their preferred price range.
 
