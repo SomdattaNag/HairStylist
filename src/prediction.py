@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 from label import hairtype
 
-model = load_model("model.h5")
+model = load_model("../models/model.h5")
 im_size = 224  
 
 def preprocess_image(image_path):
@@ -20,5 +20,4 @@ def predict_hairtype(image_path):
     prediction = model.predict(newimg)
     predictlabel = np.argmax(prediction)  
     return hairtype[predictlabel]
-
 

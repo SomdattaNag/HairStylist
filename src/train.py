@@ -13,7 +13,7 @@ from tensorflow.keras.applications import MobileNetV2
 from tensorflow.keras.layers import GlobalAveragePooling2D, Dense, Dropout
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-df = pd.read_csv('hair_dataset.csv')
+df = pd.read_csv('../csv_datasets/hair_dataset.csv')
 im_size = 224
 images = []
 labels = []

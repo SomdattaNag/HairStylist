@@ -3,8 +3,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from textblob import TextBlob
 
-keyword_df = pd.read_csv("hairtypekeyword.csv")
-product_df = pd.read_csv("shampoo_data.csv", index_col=0)
+keyword_df = pd.read_csv("../csv_datasets/hairtypekeyword.csv")
+product_df = pd.read_csv("../csv_datasets/shampoo_data.csv", index_col=0)
 product_df.columns = product_df.columns.str.strip()
 
 product_df["Combined_Text"] = (

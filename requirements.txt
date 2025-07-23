@@ -5,3 +5,5 @@ streamlit
 matplotlib
 textblob
 scikit-learn
+numpy
+pandas

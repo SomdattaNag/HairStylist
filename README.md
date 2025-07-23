@@ -38,7 +38,7 @@ Python, TensorFlow, Streamlit, OpenCV, Pillow, Matplotlib, TextBlob, Scikit-lear
 
 5. Test Accuracy: 0.80 to 0.86 (varies due to randomness). The model with highest accuracy (0.86) is saved for future predictions. 
 
-6. Product Recommendation using content-based filtering: The system uses scikit-learn's  TF-IDF and cosine similarity to match products from shampoo_data.csv with keywords from hairtypekeyword.csv and filter them according to similarity score. The products are also flitered by users' selected price range 
+6. Product Recommendation using content-based filtering: The system uses scikit-learn's  TF-IDF and cosine similarity to match products from shampoo_data.csv with keywords from hairtypekeyword.csv and filter them according to similarity score. The products are also flitered by users' selected price range. 
 
 7. Sentiment analysis using textblob: Uses textblob for basic sentiment analysis of product feedback and filter products according to feedback_score. The products with top feedback scores are prioritised. 
 
