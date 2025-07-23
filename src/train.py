@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from tensorflow.keras.utils import to_categorical
 from tqdm import tqdm
 from sklearn.preprocessing import LabelEncoder
-from label import hairtype
+from src.label import hairtype
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.applications import MobileNetV2
 from tensorflow.keras.layers import GlobalAveragePooling2D, Dense, Dropout
