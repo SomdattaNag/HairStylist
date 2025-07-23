@@ -1,7 +1,7 @@
 from tensorflow.keras.models import load_model
 import cv2
 import numpy as np
-from label import hairtype
+from src.label import hairtype
 
 model = load_model("../models/model.h5")
 im_size = 224  
