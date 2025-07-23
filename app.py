@@ -2,8 +2,8 @@ import streamlit as st
 import time
 import tempfile
 from PIL import Image
-from prediction import predict_hairtype
-from productrecommendation import recommend_products
+from src.prediction import predict_hairtype
+from src.productrecommendation import recommend_products
 
 st.markdown("""
     <style>
