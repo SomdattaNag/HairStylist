@@ -4,7 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from textblob import TextBlob
 import os
 
-keyword_df = pd.read_csv(os.path.join("csv_datasets", "shampoo_data.csv"))
+keyword_df = pd.read_csv(os.path.join("csv_datasets", "hairtypekeyword.csv"))
 product_df = pd.read_csv(os.path.join("csv_datasets", "shampoo_data.csv"), index_col=0)
 product_df.columns = product_df.columns.str.strip()
 
