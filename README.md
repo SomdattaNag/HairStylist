@@ -6,7 +6,7 @@ their predicted hair type, selected price range, and products' top feedback.
 https://hairstylist-xytvh4e35rqqf7hckt3hse.streamlit.app/
 
 # Tech Stack:
-Python, TensorFlow, Streamlit, OpenCV, Pillow, Matplotlib, TextBlob
+Python, TensorFlow, Streamlit, OpenCV, Pillow, Matplotlib, TextBlob, Scikit-learn
 
 # Overview:
 
