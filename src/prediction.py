@@ -2,8 +2,9 @@ from tensorflow.keras.models import load_model
 import cv2
 import numpy as np
 from src.label import hairtype
+import os
 
-model = load_model("../models/model.h5")
+model = load_model(os.path.join("models", "model.h5"))
 im_size = 224  
 
 def preprocess_image(image_path):
