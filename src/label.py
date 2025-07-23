@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     df = pd.DataFrame(data, columns=["Image Path", "Label"])
 
-    #save as csv
+    #saved as csv
     output_dir = "csv_datasets"
     os.makedirs(output_dir, exist_ok=True)
     df.to_csv(os.path.join(output_dir, "hair_dataset.csv"), index=False)
