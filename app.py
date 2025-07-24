@@ -62,6 +62,12 @@ st.markdown("""
 """,
 unsafe_allow_html=True)
 
+st.markdown(f"""
+        <p style="font-size:25px; font-weight:bold; text-align:center;">
+            <strong>Please upload clear, non blurry, sharp image of your real hair</strong>
+        </p>
+    """, unsafe_allow_html=True)
+
 option = st.radio("Choose an option:", ("Upload an Image", "Take Photo"))
 image_path = None
 
@@ -69,6 +75,8 @@ if option == "Upload an Image":
     uploaded_file = st.file_uploader("Upload an image of your hair", type=["jpg", "png", "jpeg"])
     if uploaded_file:
         image = Image.open(uploaded_file)
+        if image.mode == "RGBA":
+            image = image.convert("RGB")
         st.image(image, caption="Uploaded Image", use_container_width=True)
         with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as temp_file:
             image_path = temp_file.name
